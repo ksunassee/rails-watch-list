@@ -1,8 +1,12 @@
+<div class="container"> 
 <% Movie.all.each do |movie| %>
   <li><%= movie.title %> : <%= movie.overview %></li>
 <% end %>
 <%= simple_form_for([@list, @bookmark]) do |f| %>
   <%= f.input :comment %>
   <%= f.association :movie %>
-  <%= f.submit %>
+  <%= f.submit class: "btn btn-success" %>
 <% end %>
+</div>
+
+

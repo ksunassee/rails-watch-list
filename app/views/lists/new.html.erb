@@ -1,7 +1,9 @@
 <h1>Create your movie list</h1>
 <div class="container">
 <%= simple_form_for(@list) do |f| %>
-  <%= f.input :name %>
-  <%= f.submit %>
+  <%= f.input :name, label:"Movie List" ,placeholder: "Enter your movie list" %>
+  <%= f.submit class: "btn btn-success" %>
 <% end %>
 </div>
+
+
