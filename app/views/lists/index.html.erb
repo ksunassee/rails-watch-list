@@ -1,6 +1,36 @@
+<div>
+  <h1 class="text-center"> WELCOME TO THE KAVEESH MOVIE LIST!!! <br> ENJOY!<h1>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag "https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_960_720.jpg" %>
+    </div>
+    <div class="carousel-item">
+       <%= image_tag "https://cdn.pixabay.com/photo/2018/07/06/19/48/charles-chaplin-3521070_960_720.jpg" %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "https://cdn.pixabay.com/photo/2015/11/03/07/23/clapper-board-1019607_960_720.jpg" %>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 <div class="container"> 
 	<div> 
-		<h1>All lists</h1>
+		<h2>All lists<%= image_tag "https://image.flaticon.com/icons/png/512/3163/3163508.png", width: 50, height: 50, crop: :fill %></h2> 
+
 		<% @lists.each do |list| %>
 		  <li><%= link_to list.name, list %></li>
 		  <%= link_to "Delete List", list, method: :delete, data: { confirm: "Are you sure?" } %></li>
@@ -8,7 +38,23 @@
 	</div>
 	<br><br>
 	<div>
-		<%= link_to "Create a new list" , new_list_path %>
+		<%= image_tag "https://image.flaticon.com/icons/png/512/891/891448.png", width: 50, height: 50, crop: :fill %><%= link_to "Create a new list"  , new_list_path %>
+
 
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

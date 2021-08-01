@@ -1,9 +1,11 @@
-<h1>Create your movie list</h1>
+<%= image_tag "https://cdn.pixabay.com/photo/2015/09/02/12/45/movie-918655_960_720.jpg", width: 400, height: 400, crop: :fill %>
+<h1 class="text-center">Create your movie list</h1>
 <div class="container">
 <%= simple_form_for(@list) do |f| %>
-  <%= f.input :name, label:"Movie List" ,placeholder: "Enter your movie list" %>
+  <%= f.input :name, label:"Movie List" ,placeholder: "Action" %>
   <%= f.submit class: "btn btn-success" %>
 <% end %>
 </div>
 
 
+	
