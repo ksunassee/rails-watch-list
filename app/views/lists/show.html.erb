@@ -17,7 +17,7 @@
     <br>
     <% movie.bookmarks.each do |bookmark| %>
       <%= bookmark.comment %>
-       <%= link_to "Delete List", list, method: :delete, data: { confirm: "Are you sure?" } %></li>
+       <%= link_to "Delete List", bookmark.list, method: :delete, data: { confirm: "Are you sure?" } %></li>
     <% end %>
     <br>
   <% end %>
