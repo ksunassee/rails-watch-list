@@ -1,4 +1,4 @@
-<div>
+<iframe allowfullscreen="" class="js-photo-page-video-iframe" frameborder="0" mozallowfullscreen="" src="//player.vimeo.com/video/553305183?title=0&amp;portrait=0&amp;byline=0&amp;autoplay=1" style="background: white;" webkitallowfullscreen=""></iframe>
   <h1 class="text-center"> WELCOME TO THE KAVEESH MOVIE LIST!!! <br> ENJOY!<h1>
 </div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -29,7 +29,7 @@
 </div>
 <div class="container"> 
 	<div> 
-		<h2>All lists<%= image_tag "https://image.flaticon.com/icons/png/512/3163/3163508.png", width: 50, height: 50, crop: :fill %></h2> 
+		<h2><%= image_tag "https://image.flaticon.com/icons/png/512/3163/3163508.png", width: 50, height: 50 %> All lists</h2> 
 
 		<% @lists.each do |list| %>
 		  <li><%= link_to list.name, list %></li>
